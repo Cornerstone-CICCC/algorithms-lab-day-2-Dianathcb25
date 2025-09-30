@@ -9,6 +9,4 @@ const books = [
   { title: "It", available: true }
 ]
 
-console.log(
-  books
-) // Expected output: ["DUNE", "IT"]
+console.log(books.filter(book => book.available).map(book => book.title).toSorted((a, b) => a.length - b.length).slice(0, 2).map(book => book.toUpperCase())) // Expected output: ["DUNE", "IT"]
