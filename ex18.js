@@ -11,7 +11,7 @@ const people = [
 ]
 
 console.log(
-  people
+  people.filter(people => people.isStudent).map(people => people.fullName.split(" ").toReversed().join(" "))
 )
 // Expected output: (array of strings)
 // ["Ali, Zara", "Chaplin, Charlie Miguel", "Smith, John"]
