@@ -4,6 +4,4 @@
 
 const numbers = [3, 10, 15, 7, 22, 18]
 
-console.log(
-  numbers
-) // Expected output: 100
+console.log(numbers.filter(num => num % 2 === 0).map(num => num * 2).reduce((acc, curr) => acc + curr))// Expected output: 100
